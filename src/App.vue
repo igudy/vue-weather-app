@@ -32,7 +32,7 @@ export default {
   data () {
     return {
       api_key: '030d54cf97600412ef16829d3a3020ed',
-      url_base: 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={030d54cf97600412ef16829d3a3020ed}',
+      url_base: 'http://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
     }
@@ -51,7 +51,8 @@ export default {
     },
     dateBuilder () {
       let d = new Date();
-      let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let months = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"];
       let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
       let day = days[d.getDay()];
